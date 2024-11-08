@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="iadeApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <!-- Kullanıcı No Girişi -->
+            <Label Text="Kullanıcı Numarası" />
+            <Entry x:Name="KullaniciNoEntry" Keyboard="Numeric" Placeholder="Örn: 101" />
+
+            <!-- Sipariş Verilen Ürün Sayısı Girişi -->
+            <Label Text="Sipariş Verdiği Ürün Sayısı" />
+            <Entry x:Name="SiparisSayisiEntry" Keyboard="Numeric" Placeholder="Örn: 5" />
+
+            <!-- İade Edilen Ürün Sayısı Girişi -->
+            <Label Text="İade Ettiği Ürün Sayısı" />
+            <Entry x:Name="IadeSayisiEntry" Keyboard="Numeric" Placeholder="Örn: 2" />
+
+            <!-- Verilen Puanların Ortalaması Girişi -->
+            <Label Text="Verilen Puanların Ortalaması (1-5)" />
+            <Entry x:Name="PuanOrtalamasiEntry" Keyboard="Numeric" Placeholder="Örn: 4.5" />
+
+            <!-- Kullanıcı Verilerini Ekle Butonu -->
+            <Button Text="Kullanıcı Ekle" Clicked="OnKullaniciEkleClicked" />
+
+            <!-- Genel İstatistikleri Göster Butonu -->
+            <Button Text="Genel İstatistikleri Göster" Clicked="OnGenelIstatistikleriGosterClicked" />
+            
+            <!-- Sipariş Verenleri Göster Butonu -->
+            <Button Text="Sipariş Verenleri Göster" Clicked="OnSiparisVerenleriGosterClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
